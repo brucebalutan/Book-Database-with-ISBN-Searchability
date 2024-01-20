@@ -1,0 +1,13 @@
+extends layout 
+
+block content
+    if (errors)
+        h1 Invalid ISBN
+    else
+        p Book Title: #{bookInfo.title}
+        p Book Authors: #{bookInfo.authors}
+        p Book Pages: #{bookInfo.pageCount} 
+        p Book Description: #{bookInfo.description}
+        p Published Date: #{bookInfo.publishedDate}
+        p Publisher: #{bookInfo.publisher}
+        img(src=bookInfo.thumbnail)

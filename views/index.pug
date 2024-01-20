@@ -1,0 +1,29 @@
+//- Assuming items is the list of books
+extends layout
+
+block content
+    if user
+        h3 Welcome back #{user.name}
+    
+    h1.mb-4 Bookstore
+
+    //- Use the Bootstrap row and col classes to create a grid with flex-wrap
+    .d-flex.flex-row.flex-wrap
+        each book in books
+                .card.ms-3.me-3(style="width: 18rem; margin: 1rem;")
+                    .card-body
+                        //- Display title, author, pages, rating
+                        h5.card-title
+                            //- Link to book with id
+                            a(href="/book/" + book._id) #{book.title}
+
+                        p.card-text Author: #{book.author}
+                        p.card-text Pages: #{book.pages}
+                        p.card-text Rating: #{book.rating}
+                        p.card-text ISBN: #{book.isbn}
+
+                        p.card-text Genres:
+                        ul.list-unstyled
+                            //- Loop through genres and print as list
+                            each genre in book.genres
+                                li #{genre}

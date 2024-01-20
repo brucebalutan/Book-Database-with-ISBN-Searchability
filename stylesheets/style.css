@@ -1,0 +1,60 @@
+body {
+    background-color: #92a8d1;
+}
+
+nav {
+    padding: 0.5rem;
+}
+
+a {
+    padding: 1rem; /* Adjusted for a more standard size */
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+li {
+    padding-left: 2rem; /* Adjusted for better readability */
+}
+
+input {
+    margin: 1rem;
+}
+
+label {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+h1,
+h5 {
+    margin: 1rem;
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    display: block; /* Remove extra spacing below images */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 576px) {
+    img {
+        padding-left: 0; /* Adjust for smaller screens */
+    }
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+

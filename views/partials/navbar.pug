@@ -1,0 +1,17 @@
+head
+    //- Define title and import stylesheet
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css', integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyO8vHQn5NkNAdL+6zB/r5a4NqdJFCpf')
+    style
+nav
+    a(href="/") Home
+    if user
+        a(href="/book/search") Search with ISBN         
+        a(href="/book/add") Add book        
+        a(href="/users/logout") Logout          
+    else
+        a(href="/book/search") Search with ISBN         
+        a(href="/users/register") Register          
+        a(href="/users/login") Login            
+    br

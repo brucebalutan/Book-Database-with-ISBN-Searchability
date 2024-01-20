@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+    h1 Search using isbn 
+        //- Create form for book and post to express route
+    form(method="POST", action="/book/search")
+        //- Create input elements based on book model
+        #form-group 
+            label ISBN:
+            input.form-control(name="isbn", type="number")
+        input.btn.btn-primary(type="submit", value="Submit")
