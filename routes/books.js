@@ -26,7 +26,7 @@ router.route("/search")
   .post(async (req, res) => {
     // Get the api
     let isbn = req.body.isbn;
-    let api = `https://www.googleapis.com/books/v1/volumes?q=${isbn}+isbn&maxResults=1&key=AIzaSyAdKtxs35_q2KO5_u3pWB3364Ov7-R7Dzk`
+    let api = `https://www.googleapis.com/books/v1/volumes?q=${isbn}+isbn&maxResults=1&key=your_key_here`
     let response = await fetch(api);
     let data = await response.json();
     if (data.items == undefined) {
@@ -131,7 +131,7 @@ router
     let book = await Book.findById(req.params.id)
     // Get the api
     const isbn = book.isbn;
-    let api = `https://www.googleapis.com/books/v1/volumes?q=${isbn}+isbn&maxResults=1&key=AIzaSyAdKtxs35_q2KO5_u3pWB3364Ov7-R7Dzk`
+    let api = `https://www.googleapis.com/books/v1/volumes?q=${isbn}+isbn&maxResults=1&key=your_key_here`
     let response = await fetch(api);
     let data = await response.json();
     // Load the data
