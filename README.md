@@ -7,6 +7,9 @@ Editing and deleting entries can be done via the UI, but can only be done by the
 This application is built using Node.js and MongoDB for persistence. Use npm install in the terminal to get
 the node modules required to start. Statement npm run dev also runs nodemon so live updates are show instantly.
 
+# Note
+  - You will need to update the Google API link and create your own API key to run this application. You can change it in the books.js in the routes folder. You can get a key in Google Developer (where there is better documentation for creating one than here).
+
 # Home Page
   - ![image](https://github.com/brucebalutan/Book-Database-with-ISBN-Searchability/assets/19336369/e8b1b970-1603-48f6-967a-58642452a813)
     - Front page populated with entries from previous users
