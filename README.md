@@ -61,5 +61,5 @@ the node modules required to start. Statement npm run dev also runs nodemon so l
 
 # Some Conclusions on the Project
   - Wanted to use pug/jade for practice
-  - Not to happy with it, the styling with bootstrap does not work too well for pug (if at all)
+  - Not too happy with it, the styling with bootstrap does not work too well for pug (if at all)
 
